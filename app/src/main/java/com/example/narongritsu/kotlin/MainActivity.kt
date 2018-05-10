@@ -28,9 +28,10 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
 
     private fun checkLogin() : Boolean {
         if (user == username.text.toString() && pass == password.text.toString()){
-            return true
             var intent = Intent(this,Main2Activity::class.java)
             startActivity(intent)
+            return true
+
         }
         return false
     }
