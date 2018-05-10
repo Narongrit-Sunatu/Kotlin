@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         if (user == username.text.toString() && pass == password.text.toString()){
             return true
             var intent = Intent(this,Main2Activity::class.java)
+            startActivity(intent)
         }
         return false
     }
